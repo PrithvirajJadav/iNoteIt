@@ -1,0 +1,50 @@
+.feature-card{
+    border: 2px solid var(--themeColor1);
+    width:20%;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: center;
+    margin-bottom: 30px;
+}
+
+.card-icon{
+    text-align: center;
+    font-size: 60px;
+    color:var(--themeColor2var1);
+}
+
+.card-title{
+    font-size: x-large;
+    font-family: var(--font2);
+    color:var(--themeColor1);
+    height: 25%;
+}
+
+.card-description{
+    color:rgba(0, 0, 0, 0.7);
+    font-size: medium;
+    margin-bottom: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.feature-card:hover{
+    background-color: var(--themeColor3var2);
+}
+
+@media screen and (max-width:1200px) {
+    .feature-card{
+        width:40%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .feature-card{
+        width:80%
+    }
+}
+@media screen and (max-width:400px) {
+    .feature-card{
+        width:95%
+    }
+}

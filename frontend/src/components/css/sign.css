@@ -1,0 +1,101 @@
+.signparent{
+    display: flex;
+    justify-content: center;
+    width: 90dvw;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.signcontainer {
+    font-family: var(--font1);
+    display: flex;
+    border: 2px solid var(--themeColor1);
+    background-color: var(--themeColor3);
+    border-radius: 15px;
+    min-width: 800px;
+    max-width: 720px;
+    box-shadow: 5px 5px 2px 0 var(--themeColor1);
+}
+
+.signheading {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    background: var(--themeColor1);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 20px;
+    color: var(--themeColor3);
+}
+
+.signheading h2,h3,h4{
+    font-family: var(--font1);
+}
+
+
+.signmain {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.signmain h1 {
+    font-family: fontTheme1;
+    color:var(--themeColor1);
+    text-align: center;
+    text-decoration: underline var(--themeColor2var1);
+}
+
+.signfooter {
+    margin-top: 10px;
+}
+
+
+.signfooter input.btn {
+    width: 100%;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    border: none;
+    background-color: var(--themeColor1);
+    border-radius: 8px;
+    color: var(--themeColor3);
+    transition: all 0.3s;
+
+}
+
+
+.signfooter input.btn:hover {
+    font-size: x-large;
+}
+
+.signfooter p {
+    text-align: center;
+}
+
+.signfooter p a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:850px) {
+    .signcontainer {
+        min-width: 80%;
+        max-width: 500px;
+    }
+
+    .signheading {
+        display: none;
+    }
+
+    .signmain {
+        width: 100%;
+    }
+}
+
+
+

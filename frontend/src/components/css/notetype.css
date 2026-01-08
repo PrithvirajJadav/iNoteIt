@@ -1,0 +1,319 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.notetype-mainhead h1 {
+    font-size: 40px;
+    font-family: fontTheme1;
+    font-weight: 800;
+    color: var(--themeColor1);
+    text-align: center;
+    text-decoration: underline var(--themeColor2var1);
+}
+
+.notetype-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.notetype-card {
+    width: 40%;
+    margin: 5%;
+    border: 3px solid white;
+    border-radius: 25px;
+    background-color: white;
+}
+
+
+.notetype-card h3 {
+    font-size: larger;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.notetype-card h3 p {
+    width: 40%;
+    text-align: center;
+    color: var(--themeColor2var1);
+}
+
+.notetype-body h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:grey;
+}
+
+.notetype-add{
+    width:90%;
+    margin: 0 auto;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 25px;
+
+}
+
+.notetype-add h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:var(--themeColor1);
+    border-bottom: 5px solid whitesmoke;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.notetype-add form{
+    text-align: center;
+    width:60%;
+    margin: 0 auto;
+}
+.input-field-name{
+    margin:0 auto;
+    width:80%;
+    position:relative;
+}
+.input-field-name input{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: medium;
+    outline: none;
+    border: 1px solid grey ;
+    border-radius: 5px;
+}
+.input-field-name label{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    transition: all 0.3s ease;
+}
+.input-field-name input:focus ,input:valid ,input:active {
+    border:none;
+    outline: 2px solid var(--themeColor2var1);
+}
+.input-field-name input:focus ~ label,input:valid ~ label,input:active ~ label{
+    transform: translateY(-125%);
+    background-color: white;
+    color:var(--themeColor1)
+}
+
+.input-field-columns{
+    width: 80%;
+    margin: 20px auto;
+
+}
+
+.input-field-columns input{
+    width: 83%;
+    height: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    margin-right: 2%;
+    font-size: medium;
+    border: 1px solid grey;
+    outline:none;
+    border-radius: 5px;
+
+}
+
+.input-field-columns input:focus,input:active{
+    border: 2px solid var(--themeColor2var3);
+}
+
+
+.input-field-columns button{
+    width: 15%;
+    height: 40px;
+    color: var(--themeColor2var1);
+    background-color: white;
+    font-size: large;
+    border-radius: 5px;
+    border: 2px solid var(--themeColor2var1);
+    transition: all 0.3s ease;
+}
+
+.input-field-columns button:hover{
+    background-color: var(--themeColor2var3);
+    color: white;
+    scale:1.1;
+}
+
+.colnames{
+    width: 80%;
+    margin: 0 auto;
+    background-color:#f3eefd;
+    border: 1px solid var(--themeColor1);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.field{
+    color:white;
+    border: 2px solid var(--themeColor2var3);
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    padding:5px;
+    font-size: 20px;
+    background-color: var(--themeColor2var3);
+}
+.field span{
+    padding-left: 5px;
+}
+
+.field button{
+    margin-left: 5px;
+    border: none;
+    background: none;
+    color:white;
+    cursor: pointer;
+}
+
+form .btn-sub{
+    width: 80%;
+    height: 40px;
+    font-size: large;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--themeColor1);
+    border: 2px solid white;
+    padding: 5px;
+    transition: all 0.3s ease;
+    margin-bottom:20px;
+}
+form .btn-sub:hover{
+    font-size: larger;
+}
+
+/* 
+    NoteType Card CSS
+*/
+.card-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid var(--themeColor3var2);
+    padding: 15px;
+}
+
+
+.card-head div{
+    font-family: var(--font2);
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 10px;
+    color: var(--themeColor1);
+}
+
+.card-head div button {
+    margin: 0 5px;
+    border: none;
+    background-color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.card-body h3{
+    font-family: var(--font1);
+    font-weight: 500;
+    font-size: larger;
+}
+
+input.notename-card{
+
+    font-family: monospace;
+    font-size: xx-large;
+    color:var(--themeColor1);
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background-color: white;
+    text-align: center;
+    width: 90% !important;
+}
+
+input.notename-card:focus,input.notename-card:valid,
+input.notename-card:active{
+    outline:none;
+    border:none;
+}
+
+
+@media screen and (max-width:1000px) {
+    .notetype-add{
+        width:90%;
+    }
+    .notetype-card {
+        width: 80%;
+        margin: 25px auto;
+        border: 3px solid white;
+        border-radius: 25px;
+        background-color: white;
+    }
+
+    .notetype-mainhead h1 {
+        font-size: 30px;
+    }
+
+    .notetype-add form{
+        width:80%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    
+    .container{
+        width:90%;
+    }
+    .notetype-card{
+        width: 90%;
+    }
+
+    .notetype-add form{
+        width:90%;
+    }
+    .notetype-add form{
+        width:100%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .notetype-add{
+        width: 100%;
+    }
+    .notetype-add form{
+        width:100%;
+    }
+    .container{
+        width: 95%;
+    }
+    .notetype-card{
+        width: 100%;
+    }
+    .notetype-card .card-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .notetype-card .card-head div{
+        font-size: x-large;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    .notetype-mainhead h1 {
+        font-size: 20px;
+    }
+    .notetype-card .card-head div button {
+        font-size:25px;
+    }
+}

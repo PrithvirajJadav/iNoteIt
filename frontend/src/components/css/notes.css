@@ -1,0 +1,265 @@
+.container-notes {
+    max-width: 720px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 25px auto;
+    box-shadow: grey 0px 0px 5px 0px;
+    /* margin-top: 25px; */
+}
+
+
+.container-notes .notes-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-notes .notes-head h1 {
+    font-family: monospace;
+    font-size: 30px;
+    color: indigo;
+    margin-left: 20px;
+}
+
+.container-notes button.addclg {
+    border: black 1px;
+    vertical-align: center;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    margin-right: 20px;
+    font-size: 60px;
+    color: darkcyan;
+    cursor: pointer;
+
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes rot1 {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rot2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+
+
+.container-notes form {
+    padding: 25px 0;
+    border-top: 5px solid whitesmoke;
+    display: none;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    overflow: auto;
+    max-height: 0;
+    overflow: hidden;
+    /* min-height: fit-content; */
+    /* animation-name: showform; */
+}
+
+@keyframes showform {
+    from {
+        max-height: 0px;
+    }
+
+    to {
+        max-height: 100dvh;
+    }
+}
+
+@keyframes hideform {
+    0% {
+        max-height: 100dvh;
+    }
+
+    100% {
+        max-height: 0;
+    }
+}
+
+
+.container-notes div.subdiv {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.container-notes div.subdiv button.btn {
+    background-color: white;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: darkcyan;
+    border: 2px solid darkcyan;
+    transition: all 0.3s ease;
+}
+
+.container-notes div.subdiv button.btn:hover {
+    color: white;
+    background-color: darkturquoise;
+    border: 2px solid darkturquoise;
+
+}
+
+.noteitem {
+    max-width: 720px;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .noteitem:first-child{
+    cursor: pointer;
+} */
+
+.noteitem h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: darkcyan;
+}
+
+.noteitem h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: indigo;
+}
+.noteitem h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(91, 91, 91);
+}
+
+.noteitem div button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: crimson;
+    cursor: pointer;
+}
+
+
+/* CSS for Search */
+
+
+.container-search {
+    position: sticky;
+    top:0px;
+    max-width: 720px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 25px auto;
+    box-shadow: grey 0px 0px 5px 0px;
+}
+
+.search-input-field {
+    display: flex;
+}
+
+.search-input {
+    width: 80%;
+    padding-right: 10px;
+}
+
+.search-input input {
+    height: 35px;
+    width: 100%;
+    font-size: large;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+}
+
+
+
+button.search-btn {
+    width: 20%;
+    font-size: large;
+    background-color: white;
+    border-radius: 5px;
+    color: darkcyan;
+    border-color: darkcyan;
+    padding: 5px 0;
+}
+
+button.search-btn:hover {
+    color: white;
+    background-color: darkturquoise;
+}
+
+
+.suggestions{
+    position: relative;
+    display: none;
+}
+
+.suggestions:hover{
+    display: block;
+}
+
+.suggestions ul{
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 5px;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 2px 0;
+    padding-left: 15px;
+}
+
+.suggestions ul li{
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    margin: 10px 0;
+    padding-left: 5px ;
+    cursor: pointer;
+    color:grey
+
+}
+
+.suggestions ul li:hover{
+    color:black;
+}
+
+.search-input input:focus + .suggestions {
+    display: block;
+}
+
+
+
+
+.newdiv{
+    height: 70dvh;
+    overflow: auto;
+}
+
+.newdiv::-webkit-scrollbar{
+    display: none;
+}
