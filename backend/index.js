@@ -3,8 +3,13 @@ import connectToMongo from './db.js'
 import router from "./src/routes/index.js"
 import cors from "cors"
 
+
 const app = express();
-const port = 3000;
+
+
+import dotenv from "dotenv";
+dotenv.config();
+const PORT = process.env.PORT;
 
 connectToMongo();
 
@@ -15,6 +20,6 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port http://localhost:${port}`)
+app.listen(PORT, () => {
+  console.log(`Example app listening on port http://localhost:${PORT}`)
 })

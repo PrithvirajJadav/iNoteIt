@@ -1,5 +1,8 @@
 import jwt from "jsonwebtoken";
-const JWT_SECRET_KEY = "AcknowledgeYourTribelCheif";
+
+import dotenv from "dotenv";
+dotenv.config();
+const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY;
 
 const fetchUserId = (req,res,next)=>{
     const token = req.header('authToken');

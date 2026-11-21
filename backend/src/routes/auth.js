@@ -3,10 +3,14 @@ import Users from "../models/Users.js";
 import NoteTypes from "../models/NoteTypes.js";
 import bcrypt from 'bcryptjs'; 
 import jwt from "jsonwebtoken";
-const JWT_SECRET_KEY = "AcknowledgeYourTribelCheif";
+
 import { body } from 'express-validator';
 import fetchUserId from "../middlewares/fetchUserId.js";
 import validate from "../middlewares/validate.js";
+
+import dotenv from "dotenv";
+dotenv.config();
+const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY;
 
 const router = Router();
 
